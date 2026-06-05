@@ -2,21 +2,21 @@
 int main()
 {
 
-  int n, sum=0;
+  int n, sum = 0;
   printf("Enter a number:");
   scanf("%d", &n);
-  for (int i=1; i <= n; i++)
+  for (int i = 1; i <= n; i++)
   {
-    n = n % i;
+    if (n % i == 0)
+      sum++;
   }
-  if (n == 0)
-  {
-    sum++;
+  if (sum == 2)
+
     printf("Prime number");
-  }
+
   else
-  {
-    printf("Not Prime");
-  }
+
+    printf("Not Prime number");
+
   return 0;
 }
