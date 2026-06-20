@@ -3,15 +3,15 @@ int Armstrong(int n);
 
 int Armstrong(int n)
 {
-  int i, x, sum = 0;
-  x = n;
-  i = n;
-  while (i > 0)
+  int original=n, sum = 0;
+  
+  while (n > 0)
   {
-    sum = sum + (i % 10) * (i % 10) * (i % 10);
-    i = i / 10;
+    int digit = n % 10;
+    sum = sum + digit * digit * digit;
+    n = n / 10;
   }
-  if (sum == x)
+  if (sum == original)
     return 1;
   else
     return 0; 
@@ -25,6 +25,6 @@ int main()
   if (Armstrong(n))
     printf("Armstrong number");
   else
-    printf("Not");
+    printf("Not an armstrong number");
   return 0; 
 }
