@@ -1,6 +1,4 @@
 #include <stdio.h>
-int maximum(int a, int b); 
-
 int maximum(int a, int b)
 {
     if (a > b)
