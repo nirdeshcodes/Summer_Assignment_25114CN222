@@ -25,6 +25,6 @@ int main()
     if (palindrom(n))
         printf("Palindrom number");
     else
-        printf("Not");
+        printf("Not a palindrome");
     return 0;
 } 
